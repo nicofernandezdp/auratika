@@ -659,7 +659,7 @@ mark,
 }
 
 .text-primary {
-    color: #31c77f !important;
+    color: var(--colorRosa) !important;
 }
 
 a.text-primary:hover,

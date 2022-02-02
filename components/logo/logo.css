@@ -1,2 +1,25 @@
-.logo-link > * {	margin-top: 0;}.logo-image-inverse {	display: none;}.logo + p {	margin-top: 1.875rem;}.context-dark .logo-image-default {	display: none;}.context-dark .logo-image-inverse {	display: inline-block;}
+.logo-link > * {
+	margin-top: 0;
+}
+
+.logo-image-inverse {
+	display: none;
+}
+
+.logo + p {
+	margin-top: 1.875rem;
+}
+.logo-sello{
+	background-image: url(https://w7.pngwing.com/pngs/343/771/png-transparent-sealing-wax-rubber-stamp-stamp-seal-seal-animals-dragon-material-thumbnail.png);
+	width: 150px;
+	height: 95px;
+	background-size: cover;
+}
+.context-dark .logo-image-default {
+	display: none;
+}
+
+.context-dark .logo-image-inverse {
+	display: inline-block;
+}
 /*# sourceMappingURL=logo.css.map */

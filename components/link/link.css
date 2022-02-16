@@ -53,15 +53,15 @@
 .context-dark .link.link-primary::before {
 	border-bottom-color: #31c77f;
 }
-
+/* 
 .link.link-secondary {
 	color: #6b39bd;
 }
 
 .link.link-secondary:hover {
 	color: var(--colorVerde);
-}
-
+} */
+/* 
 .context-dark .link.link-secondary {
 	color: #fff;
 }
@@ -72,7 +72,7 @@
 
 .context-dark .link.link-secondary::before {
 	border-bottom-color: var(--colorVerde);
-}
+} */
 
 .link.link-success {
 	color: #77ba21;

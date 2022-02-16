@@ -797,6 +797,7 @@ a.text-dark:focus {
 
 .d-flex {
     display: flex !important;
+    justify-content: center;
 }
 
 .d-inline-flex {
@@ -1881,7 +1882,7 @@ button.bg-primary:focus {
 }
 
 .bg-secondary {
-    background-color: #6b39bd !important;
+    background-color: var(--colorGris) !important;
 }
 
 a.bg-secondary:hover,

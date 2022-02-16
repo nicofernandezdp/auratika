@@ -114,12 +114,18 @@
     left: 50%;
     transform: translateX(-50%);
 }
-
-@media (max-width: 359px) {
+@media (max-width: 425px) {
     .rd-navbar-fixed .navbar-logo {
-        left: 47%;
+        left: 44%;
+        top: 18px
+    }
+    .navbar-logo-link {
+        display: block;
+        margin: 0px;
+        width: 70%;
     }
 }
+
 
 .rd-navbar-fixed .navbar-navigation-banner {
     padding: 14px 0;
@@ -133,7 +139,7 @@
     align-items: center;
     justify-content: center;
     width: 60px;
-    height: 80px;
+    height: 70px;
     font-size: 1.3846rem;
     line-height: 1;
     border: none;

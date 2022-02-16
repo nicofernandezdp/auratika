@@ -238,7 +238,7 @@
 	font-size: 7.5vw;
 	line-height: 1;
 	font-weight: 400;
-	color: rgba(236, 236, 245, 0.1);
+	color: rgba(236, 236, 245, 0);
 	transform: scale(0.697);
 	transform-origin: 50% 80%;
 	transition: .3s;

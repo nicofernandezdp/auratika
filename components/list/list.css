@@ -115,6 +115,7 @@ h2 + .list-marked-arrow {
 
 .context-dark .list-contact {
 	color: inherit;
+	margin: 15px 0;
 }
 
 @media (min-width: 992px) {

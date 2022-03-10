@@ -6201,7 +6201,7 @@ button.bg-900:focus {
 .bg-gradient-animated {
     background-size: 400% auto;
     background-position: 100% 50%;
-    background-image: linear-gradient(90deg, #b2edff 0%, #e9dbff 25%, #c1ffe1 50%, #b2edff 75%, #e9dbff 100%);
+    background-image: linear-gradient(90deg, #ffffff 0%, #e9e9e9 25%, #cecece 50%, #cfcfcf 75%, #b1b1b1 100%);
     animation: gradientMotion 20s infinite linear;
 }
 
@@ -6314,6 +6314,127 @@ a.text-900:focus {
 .context-dark .text-contrast {
     color: #aeaeb2;
 }
+/******* NUESTROS PROYECTOS ********/
+#nuestros-proyectos{
+    background-color: var(--colorGris);
+    display: flex;
+    justify-content: center;
+}
+#nuestros-proyectos h2{
+    font-size: 3rem;
+    margin: 0 1.25rem 30px 1.25rem;
+    letter-spacing: -0.1rem;
+    font-weight:600;
+}
+.portadas{
+    display: grid;
+    justify-content: center;
+    flex-direction: row;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 5px;
+}
+/******* EQUIPO ********/
+#equipo img{
+    width: 50%;    
+}
 
+@media (max-width:1200px){
+    .portadas{
+        display: grid;
+        justify-content: center;
+        flex-direction: row;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 5px;
+    }
+}
 
+@media (max-width:768px){
+    .portadas{
+        display: grid;
+        justify-content: center;
+        flex-direction: row;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 5px;
+    }
+}
+
+/******* NOSOTROS ******/
+/******* QUIENES SOMOS *******/
+#quienes-somos h1{
+    color: white;
+}
+#quienes-somos p{
+    color: white;
+    font-size: 1rem ;
+    text-align: justify;
+}
+
+#cultura-accesible{
+    background-color: var(--colorBlanco);
+}
+
+#cultura-accesible h1{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 3.8rem;
+    color: var(--colorVerde);
+}
+
+#equipo h1, h4, h6{
+    color: white;
+}
+
+#equipo h6{
+    font-size: 1rem;
+    margin-top: 0px;
+    font-weight: 300;
+}
+
+.equipo{
+    display: grid;
+    justify-content: center;
+    flex-direction: row;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 3px;
+    margin-top: 50px;
+}
+
+/****** SERVICIOS *****/
+#bnrServicios {
+    background-image: url(/images/portada-serv.jpg);
+    background-size: contain;
+}
+#bnrServicios h1{
+    background-color: var(--colorAmarillo);
+    color: white;
+    font-size: 2rem;
+    padding: 15px 20px;
+}
+#servicios1 h1{
+    color: white;
+    margin-top: 1.5rem;
+}
+
+#servicios1 p{
+    color: white;
+    font-size: 1rem ;
+    text-align: left;
+}
+
+#servicios2{
+    background-color: var(--colorBlanco);
+}
+#servicios2 h1{
+    color: var(--colorNegro);
+    margin-top: 1.5rem;
+}
+#servicios2 h6{
+    color: var(--colorVerde);
+}
+
+#servicios2 p{
+    color: var(--colorNegro);
+    font-size: 1rem ;
+    text-align: left;
+    margin-top: 1rem;
+}
 /*# sourceMappingURL=base.css.map */

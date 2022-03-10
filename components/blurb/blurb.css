@@ -1,4 +1,6 @@
 .blurb {
+	display: flex;
+	justify-content: flex-start;
 	font-size: 1.0625rem;
 }
 
@@ -41,9 +43,6 @@
 	margin-top: 2.5rem;
 }
 
-* + .blurb-title {
-	margin-top: 1.875rem;
-}
 
 * + .blurb-text {
 	margin-top: 1.25rem;
@@ -62,7 +61,7 @@
 }
 
 .blurb-boxed {
-	padding: 10%;
+	padding: 4%;
 	border-radius: 0.375rem;
 	background-color: #fff;
 	box-shadow: 5px 8px 28px rgba(23, 23, 36, 0.1);

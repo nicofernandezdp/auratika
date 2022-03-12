@@ -6334,8 +6334,13 @@ a.text-900:focus {
     grid-gap: 5px;
 }
 /******* EQUIPO ********/
+#equipo .equipo{
+    display: flex;   
+    justify-content: center;
+    flex-wrap: nowrap;
+}
 #equipo img{
-    width: 50%;    
+    width: 65%;    
 }
 
 @media (max-width:1200px){
@@ -6355,6 +6360,14 @@ a.text-900:focus {
         flex-direction: row;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 5px;
+    }
+    #equipo .equipo{
+        display: flex;   
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .team{
+        margin-bottom: 40px;
     }
 }
 
@@ -6381,10 +6394,11 @@ a.text-900:focus {
 
 #equipo h1, h4, h6{
     color: white;
+    padding: 5px;
 }
 
 #equipo h6{
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin-top: 0px;
     font-weight: 300;
 }

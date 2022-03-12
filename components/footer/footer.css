@@ -1,5 +1,5 @@
 .footer {
-	background-color: var(--colorNegro);
+	background-color: var(--colorGris);
 	padding: 4rem 0rem 2.5rem;
 }
 
@@ -56,7 +56,7 @@
 	text-align: right;
 }
 .footer li{
-	color:var(--colorWhite);
+	color:var(--colorNegro);
 	font-size: 0.9rem;
 }
 .footer li a {
@@ -109,7 +109,7 @@
 
 @media (min-width: 992px) {
 	.footer {
-		padding: 6.25rem 0rem 3.125rem;
+		padding: 2.25rem 0rem 3.125rem;
 	}
 	.footer .row + .row {
 		margin-top: 5rem;

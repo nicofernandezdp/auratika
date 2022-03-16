@@ -1,5 +1,9 @@
 'use strict';
 
+function stopVideo() {
+	document.getElementById('video').pause();
+}
+
 // Global components list
 let components = window.components = {};
 

@@ -1254,10 +1254,13 @@
 }
 
 .rd-navbar-fullwidth .navbar-navigation-root-link {
+    font-family: 'Roboto',sans-serif;
     position: relative;
     display: block;
     line-height: 1;
     color: var(--colorBlanco);
+    text-decoration: none;
+
 }
 
 .rd-navbar-fullwidth .navbar-navigation-root-link::before {

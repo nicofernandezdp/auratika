@@ -1153,3 +1153,41 @@ components.banner = {
 	selector: '.section-banner',
 	styles: './components/banner/banner.css'
 };
+
+function mostrarModal(){
+	var modal = document.getElementById("modal");
+	modal.style.display = "block";
+}
+
+function cerrarModal(){
+	var modal = document.getElementById("modal");
+	modal.style.display = "none";
+
+	modal.addEventListener('click', function(event){
+		if (event.target === modal){
+			modal.style.display = "none"
+		}
+	})
+}
+
+
+function showConfirmationModal(){
+	var modal = document.getElementById("modalConf");
+	modal.innerHTML = "¡Formulario enviado con éxito!";
+	modal.style.display = "block";
+}
+
+
+function closeConfirmationModal(){
+	var modal = document.getElementById("modalConf");
+	modal.style.display = "none";
+}
+
+
+
+/************ slick slider videos **********/
+$('.carousel').slick({
+    infinite: true,
+    slidesToShow: 2,
+    slidesToScroll: 1
+});

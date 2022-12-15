@@ -1,16 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <title>Servicios - Auratika</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta property="og:title" content="Template Monster Admin Template">
-    <meta property="og:description" content="brevis, barbatus clabulares aliquando convertam de dexter, peritus capio. devatio clemens habitio est.">
-    <meta property="og:image" content="http://digipunk.netii.net/images/radar.gif">
-    <meta property="og:url" content="http://digipunk.netii.net">
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/ico-auratika-ow.png" type="image/x-icon">
     <link rel="stylesheet" href="components/base/base.css">
     <script src="components/base/core.js"></script>
     <script src="components/base/script.js"></script>
@@ -19,6 +15,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@100;300;500;900&display=swap" rel="stylesheet">
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-MST5KLF');</script>
+    <!-- End Google Tag Manager -->
 </head>
 
 <body>
@@ -40,11 +44,18 @@
                         <ul class="navbar-navigation rd-navbar-nav">
                             <li class="navbar-navigation-root-item"><a class="navbar-navigation-root-link" href="/index.html">INICIO</a>
                             </li>
-                            <li class="navbar-navigation-root-item"><a class="navbar-navigation-root-link" href="/nosotros.html">NOSOTROS</a>
+                            <li class="navbar-navigation-root-item"><a class="navbar-navigation-root-link" href="/quienessomos.html">QUIÉNES SOMOS</a>
                             </li>
                             <li class="navbar-navigation-root-item"><a class="navbar-navigation-root-link" href="/servicios.html">SERVICIOS</a>
                             </li>
-                            <li class="navbar-navigation-root-item"><a class="navbar-navigation-root-link" href="/contacto.html">CONTACTO</a>
+                            <li class="navbar-navigation-root-item">
+                                <a class="navbar-navigation-root-link" href="#formulario" onclick="mostrarModal();">CONTACTO</a>
+                            </li>
+                            <li>
+                                <div class="switch-en">
+                                    <a href="http://www.auratika.com/index.html">ES</a> / 
+                                    <a href="http://www.auratika.com/en/index.html">EN</a>
+                                </div>
                             </li>
                         </ul>
                     </div>
@@ -56,24 +67,25 @@
         <section class="section section-lg bg-gradient-animated text-left d-flex align-items-center" id="bnrServicios">
             <div class="container">
                 <div class="row justify-content-left">
-                    <div class="col-md-6 col-lg-6 " data-animate='{"class":"fadeInUp"}'>
-                        <h1>The smartest and the most flexible Bootstrap template</h1>
+                    <div class="col-md-4 col-lg-4 " data-animate='{"class":"fadeInUp"}'>
+                        <h1>Creamos cultura<br>
+                            accesible</h1>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Servicio Audiodescripción-->
-        <section class="section section-lg " id="servicios2">
+        <section class="section section-lg " id="servicios2" data-animate='{"class":"fadeInLeft"}'>
             <div class="container">
                 <div class="row row-30 align-items-center justify-content-lg-between">
-                    <div class="col-sm-6 col-md-6 col-lg-6" data-animate='{"class":"fadeInLeft"}'>
+                    <div class="col-sm-6 col-md-6 col-lg-6" >
                         <h6 class="text-primary">#Servicios</h6>
                         <h1>Audiodescripción</h1>
                         <p>AD es una voz en off que ingresa en los espacios de silencio para relatar o dar
                             información sobre los aspectos más significativos de la imagen, como gestos,
                             lugares, acciones, etc.
-                            El objetivo de la Audiodescripción es dar apoyo a la persona ciega o de baja
+                            El objetivo de la audiodescripción es dar apoyo a la persona ciega o de baja
                             visión para que pueda comprender la escena.</p>
 
                         <h6 class="text-primary">¿Cómo realizamos este proceso?</h6>
@@ -82,12 +94,12 @@
                             y series.<br>
                             • Locución con talentos de trayectoria profesional y formación en
                             audiodescripción.<br>
-                            • Mezcla de Audio e integración a banda sonora.<br>
+                            • Mezcla de audio e integración a banda sonora.<br>
                             • Edición de voz y tonos acordes al contenido para lograr una unidad
                             entre el producto audiovisual y su audiodescripción.</p>
                         <h6 class="text-primary">#AD #Audiodescripción</h6>
                     </div>
-                    <div class="col-xs-10 col-sm-5 col-md-5 col-lg-5">
+                    <div class="col-xs-10 col-sm-6 col-md-6 col-lg-6 justify-content-center" style="text-align: center; margin-top: 70px;">
                         <img src="images/flujo-audiodesc.svg" alt="" width="300" />
                     </div>
                 </div>
@@ -95,33 +107,36 @@
         </section>
 
         <!-- Servicio Subtitulado-->
-        <section class="section section-lg " id="servicios1">
+        <section class="section section-lg " id="servicios1" data-animate='{"class":"fadeInLeft"}'>
             <div class="container">
-                <div class="row row-30 align-items-center justify-content-lg-between">
-                    <div class="col-sm-6 col-md-6 col-lg-6" data-animate='{"class":"fadeInLeft"}'>
+                <div class="row row-30 align-items-start justify-content-lg-between">
+                    <div class="col-sm-6 col-md-6 col-lg-6" >
                         <h6 class="text-primary">#Servicios</h6>
                         <h1>Subtitulado</h1>
                         <p style="font-weight: 400;">Creamos subtítulos y subtítulos para personas sordas.<br>
-                            Traducimos: Castellano a Castellano / Castellano a Inglés / Inglés a Castellano</p>
+                            Traducimos: castellano a castellano / castellano a inglés / inglés a castellano</p>
                         <h6>¿Cómo realizamos este proceso?</h6>
                         <p>• Transcripción del guión original
                            • Traducción de subtítulos desde plantilla
                            • Creación de Spotting List (pautado de subtítulos)
-                           • Edición y mezcla en Video (incrustado en imagen)</p>
-                           <h6>Subtitulado para personas sordas (SPPS)</h6>
-                        <p>El SPPS convierte el lenguaje sonoro a texto.
+                           • Edición y mezcla en video (incrustado en imagen).</p>
+                           <h6>Subtitulado para personas sordas (SPHH)</h6>
+                        <p>El SPHH convierte el lenguaje sonoro a texto.
                             Traducimos el discurso hablado, como así también ruidos, efectos, música y
                             silencios, para tener una mejor comprensión de la escena.</p>
-                        
                         <h6>Formato de entrega</h6>
                         <p>El material subtitulado puede exportarse en múltiples formatos:</p>
                         <div class="grid-formatos">
-                            
+                            <div class="formato">.txt</div>
+                            <div class="formato">.ass</div>
+                            <div class="formato">.srt</div>
+                            <div class="formato">Abiertos (Incrustado en imagen)</div>
+                            <div class="formato">Cerrados (Close Caption)</div>
                         </div>
 
-                        <h6 class="text-primary">#AD #Subtitulado</h6>
+                        <h6 class="text-primary">#Subtitulado #SPHH</h6>
                     </div>
-                    <div class="col-xs-10 col-sm-5 col-md-5 col-lg-5">
+                    <div class="col-xs-10 col-sm-6 col-md-6 col-lg-6 justify-content-center" style="text-align: center; margin-top: 70px;">
                         <img src="images/flujo-subtitulado.svg" alt="" width="350" />
                     </div>
                 </div>
@@ -140,33 +155,62 @@
             <div class="col-xs-12 col-md-3 col-lg-3">
                 <ul class="list list-contact">
                     <li>CONTACTO</li>
-                    <li class="list-contact-item">Teléfono: +54 9 351 653 1305</li>
-                    <li class="list-item"><a class="link list-contact-link " href="mailto:info@auratika.com" >info@auratika.com</a></li>
+                    <li class="list-contact-item">Teléfono: +54 9 354 363 9559</li>
+                    <li class="list-item"><a class="link list-contact-link " href="mailto:hello@auratika.com" >hello@auratika.com</a></li>
                 </ul>
             </div>
             <div class="col-xs-12 col-md-3 col-lg-3">
                 <ul class="list list-contact">
                     <li>OFICINA</li>
-                    <li class="list-contact-item">Head Office: Uruguay 450 - B° Juniors Córdoba - Argentina</li>
+                    <li class="list-contact-item">Head Office: Córdoba - Argentina</li>
                 </ul>
             </div>
             <div class="redes-foot col-xs-12 col-md-3 col-lg-3">
                 <div class="group-30 d-flex text-white">
-                    <a class="icon icon-xs icon-social int-youtube novi-icon" href="#"></a>
-                    <a class="icon icon-xs icon-social int-instagram novi-icon" href="#"></a>
-                    <a class="icon icon-xs icon-social int-linkedin novi-icon" href="#"></a>
+                    <!-- <a class="icon icon-xs icon-social int-youtube novi-icon" target="blank" href="https://www.youtube.com/channel/UCkdRZ-y0DHQOPGTgK6-lvZQ"></a> -->
+                    <a class="icon icon-xs icon-social int-instagram novi-icon" target="_blank" href="https://www.instagram.com/auratika.media/"></a>
+                    <a class="icon icon-xs icon-social int-linkedin novi-icon" target="_blank" href="https://www.linkedin.com/company/auratika/"></a>
+                    <a class="icon icon-sm icon-social" style="margin: -3px 25px;" target="_blank" href="https://api.whatsapp.com/send?phone=5493543639559&text=Quiero%20solicitar%20m%C3%A1s%20informaci%C3%B3n" ><i class="fab fa-whatsapp"></i></a>
                 </div>
             </div>
-             <!--Logo Footer-->
-             <!-- <div class="logo-sello">
-                <a class="logo-link">
-                    <img class="logo-image-inverse" src="images/sello-verde.svg" alt="Intense" width="161" height="27" />
-                </a>
-            </div> -->
         </div>
     </div>
 </footer>
 </div>
+
+<!-- MODAL CONTACTO -->
+<section id="modal" class="contenedor-modal" style="display:none;">
+    <div class="modalc">
+        <a onclick="cerrarModal();" class="cerrar_modal">
+            <img src="./images/icon-close.svg" alt="cerrar modal">
+        </a>
+        <div class="tit-contact">Envianos tu mensaje</div>
+        <form method="post" action="enviar.php">
+            <div class="inputform">
+                <input type="text" name="nombre" placeholder="Nombre y apellido" required autofocus>
+            </div>
+            <div class="inputform">
+                <input type="email" name="email" placeholder="E-mail" required autofocus>
+            </div>
+            <div class="inputform">
+                <input type="number" name="telefono" maxlength="10" placeholder="Ej: 11 2563 3568" autofocus oninput="if (this.value.length > 10) { this.value = this.value.substring(0, 10)}">
+            </div>
+            <div class="inputform">
+                <textarea name="mensaje" cols="30" rows="5" placeholder="Mensaje" required></textarea>
+            </div>
+            <button id="btnEnviar" type="submit" onclick="showConfirmationModal()" class="form_cta">Enviar</button>
+        </form>
+    </div>
+</section>
+<!-- FIN MODAL CONTACTO -->
+
+<a href="https://api.whatsapp.com/send?phone=5493543639559" class="btn-wtsp" target="_blank">
+    <img src="./images/btn-wtsp.svg" alt="Botón Whatsapp">
+</a>
 <div class="to-top int-arrow-up"></div>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MST5KLF"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 </body>
 </html>

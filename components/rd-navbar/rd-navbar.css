@@ -111,7 +111,7 @@
 .rd-navbar-fixed .navbar-logo {
     position: fixed;
     top: 22px;
-    right: -30%;
+    right: 22%;
     transform: translateX(-50%);
 }
 @media (max-width: 425px) {

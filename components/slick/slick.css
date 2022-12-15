@@ -221,6 +221,7 @@
 }
 
 .slick-creative .slider-nav {
+	width: 500px;
 	font-size: 0;
 	line-height: 0;
 }
@@ -269,7 +270,6 @@
 
 @media (min-width: 768px) {
 	.slick-creative .slider-nav {
-		width: 43vw;
 	}
 	.slick-creative .slider-nav .slick-dot {
 		font-size: 3.5rem;
@@ -277,6 +277,6 @@
 	}
 	.slick-creative .slider-images {
 		width: 54.3vw;
-	}
+	} 
 }
 /*# sourceMappingURL=slick.css.map */

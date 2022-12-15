@@ -1,0 +1,38 @@
+.logo-link > * {
+	margin-top: 0;
+}
+
+.logo-image-inverse {
+	display: none;
+}
+
+.logo + p {
+	margin-top: 1.875rem;
+}
+.logo-sello{
+	width: 161px;
+	height: 75px;
+	margin: -30px 0 58px 0;
+	background-size: cover;
+}
+.context-dark .logo-image-default {
+	display:inline-block;
+	width: 65%;
+}
+
+.context-dark .logo-image-inverse {
+	display: inline-block;
+}
+/*# sourceMappingURL=logo.css.map */
+
+@media (max-width:768px){
+	.context-dark .logo-image-default{
+		width: 95%;
+	}
+}
+
+@media (max-width:425px){
+	.context-dark .logo-image-default{
+		width: 50%;
+	}
+}

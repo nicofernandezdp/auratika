@@ -1260,6 +1260,7 @@
     line-height: 1;
     color: var(--colorBlanco);
     text-decoration: none;
+    cursor: pointer;
 
 }
 

@@ -63,7 +63,7 @@
                                 <a class="navbar-navigation-root-link" href="/servicios.html">SERVICIOS</a>
                             </li>
                             <li class="navbar-navigation-root-item">
-                                <a class="navbar-navigation-root-link" href="#formulario" onclick="mostrarModal();">CONTACTO</a>
+                                <button class="navbar-navigation-root-link" id="openModal">CONTACTO</button>
                             </li>
                             <li>
                                 <div class="switch-en">
@@ -263,11 +263,11 @@
     <div class="to-top int-arrow-up"></div>
 
     <!-- MODAL CONTACTO -->
-    <section id="modal" class="contenedor-modal" style="display:none;">
+    <section id="modalContainer" class="contenedor-modal" data-bs-toggle="modal" data-bs-target="#openModal" aria-hidden="true">
             <div class="modalc">
-                <a onclick="cerrarModal();" class="cerrar_modal">
+                <button id="closeModal" class="cerrar_modal">
                     <img src="./images/icon-close.svg" alt="cerrar modal">
-                </a>
+                </button>
                 <div class="tit-contact">Envianos tu mensaje</div>
                 <form method="post" action="enviar.php">
                     <div class="inputform">
@@ -289,14 +289,14 @@
     <!-- FIN MODAL CONTACTO -->
 
     <!-- Modal confirmación de mensaje -->
-    <section  class="contenedor-modal" >
+    <!-- <section  class="contenedor-modal" >
         <div class="modal-confirmacion" id="modalConf">
-            <div class="cerrar_modal">
+            <button id="closeModal" class="cerrar_modal">
                 <img src="./images/icon-close.svg" alt="cerrar modal">
-            </div>
+            </button>
             <div class="tit-confirmacion">Mensaje enviado con exito</div>
         </div>
-    </section>
+    </section> -->
     
     <!-- Fin confirmación de mensaje -->
 

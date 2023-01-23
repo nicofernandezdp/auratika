@@ -49,7 +49,7 @@
                             <li class="navbar-navigation-root-item"><a class="navbar-navigation-root-link" href="/servicios.html">SERVICIOS</a>
                             </li>
                             <li class="navbar-navigation-root-item">
-                                <a class="navbar-navigation-root-link" href="#formulario" onclick="mostrarModal();">CONTACTO</a>
+                                <a class="navbar-navigation-root-link" id="openModal">CONTACTO</a>
                             </li>
                             <li>
                                 <div class="switch-en">
@@ -178,31 +178,6 @@
 </footer>
 </div>
 
-<!-- MODAL CONTACTO -->
-<section id="modal" class="contenedor-modal" style="display:none;">
-    <div class="modalc">
-        <a onclick="cerrarModal();" class="cerrar_modal">
-            <img src="./images/icon-close.svg" alt="cerrar modal">
-        </a>
-        <div class="tit-contact">Envianos tu mensaje</div>
-        <form method="post" action="enviar.php">
-            <div class="inputform">
-                <input type="text" name="nombre" placeholder="Nombre y apellido" required autofocus>
-            </div>
-            <div class="inputform">
-                <input type="email" name="email" placeholder="E-mail" required autofocus>
-            </div>
-            <div class="inputform">
-                <input type="number" name="telefono" maxlength="10" placeholder="Ej: 11 2563 3568" autofocus oninput="if (this.value.length > 10) { this.value = this.value.substring(0, 10)}">
-            </div>
-            <div class="inputform">
-                <textarea name="mensaje" cols="30" rows="5" placeholder="Mensaje" required></textarea>
-            </div>
-            <button id="btnEnviar" type="submit" onclick="showConfirmationModal()" class="form_cta">Enviar</button>
-        </form>
-    </div>
-</section>
-<!-- FIN MODAL CONTACTO -->
 
 <a href="https://api.whatsapp.com/send?phone=5493543639559" class="btn-wtsp" target="_blank">
     <img src="./images/btn-wtsp.svg" alt="Botón Whatsapp">

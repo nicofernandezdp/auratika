@@ -1154,35 +1154,6 @@ components.banner = {
 	styles: './components/banner/banner.css'
 };
 
-function mostrarModal(){
-	var modal = document.getElementById("modal");
-	modal.style.display = "block";
-}
-
-function cerrarModal(){
-	var modal = document.getElementById("modal");
-	modal.style.display = "none";
-
-	modal.addEventListener('click', function(event){
-		if (event.target === modal){
-			modal.style.display = "none"
-		}
-	})
-}
-
-
-function showConfirmationModal(){
-	var modal = document.getElementById("modalConf");
-	modal.innerHTML = "¡Formulario enviado con éxito!";
-	modal.style.display = "block";
-}
-
-
-function closeConfirmationModal(){
-	var modal = document.getElementById("modalConf");
-	modal.style.display = "none";
-}
-
 
 
 /************ slick slider videos **********/
@@ -1191,3 +1162,16 @@ $('.carousel').slick({
     slidesToShow: 2,
     slidesToScroll: 1
 });
+
+
+/***** abrir modal ******/
+const openModalButton = document.getElementById("openModal");
+const modalContainer = document.getElementById("modalContainer");
+
+openModalButton.addEventListener("click", function(){
+	if (modalContainer.style.display === "none"){
+		modalContainer.style.display = "block";
+	} else {
+		modalContainer.style.display = "none";
+	}
+})

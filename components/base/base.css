@@ -150,17 +150,6 @@ a:hover {
     text-decoration: underline;
 }
 
-a:not([href]):not([tabindex]) {
-    color: inherit;
-    text-decoration: none;
-}
-
-a:not([href]):not([tabindex]):hover,
-a:not([href]):not([tabindex]):focus {
-    color: inherit;
-    text-decoration: none;
-}
-
 a:not([href]):not([tabindex]):focus {
     outline: 0;
 }
@@ -6642,17 +6631,23 @@ background-color: var(--colorRosa) !important;
 
 
 /******* MODAL CONTACTO ******/
-.contenedor-modal{
+#modalContainer{
     display: none;
+}
+#closeModal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+.contenedor-modal{
     width: 100%;
     height: 100%;
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 3;
+    z-index: 100;
     background: rgba(0, 0, 0, 0.8);
     transition: all ease 0.2s;
-
 }
 .modalc{
     display: flex;
@@ -6673,18 +6668,6 @@ background-color: var(--colorRosa) !important;
     transform: translate(-50%, -50%);
 }
 
-.modal-container{
-    display: flex;
-    flex-direction: column;
-    background-color: var(--colorBlanco);
-    width: 90%;
-    max-width: 500px;
-    overflow: hidden;
-    padding: 50px;
-    font-size: 14px !important;
-    justify-content: center;
-
- }
 
 @keyframes show{
     0%{

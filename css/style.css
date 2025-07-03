@@ -1,0 +1,310 @@
+/* General styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5; /* Lighter grey */
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #007bff; /* Primary blue */
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.8em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0.5em 0 0 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+nav a:hover, nav a.active {
+    background-color: #0056b3; /* Darker blue for hover/active */
+}
+
+main {
+    padding: 20px;
+    padding-bottom: 70px; /* Space for fixed footer */
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #343a40; /* Dark grey */
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.9em;
+}
+
+/* Forms */
+.form-container {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 25px;
+}
+
+.form-container h2, .form-container h3 {
+    margin-top: 0;
+    color: #007bff;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.form-container label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    font-size: 0.95em;
+}
+
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container input[type="password"],
+.form-container input[type="number"],
+.form-container input[type="date"],
+.form-container select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+.form-container input[type="checkbox"] {
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+.form-container button {
+    background-color: #28a745; /* Green */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.2s ease;
+}
+
+.form-container button:hover {
+    background-color: #218838; /* Darker green */
+}
+.form-container button.secondary {
+    background-color: #6c757d; /* Grey */
+}
+.form-container button.secondary:hover {
+    background-color: #5a6268;
+}
+
+
+/* Reservation cards */
+.reservation-card {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-left: 5px solid #007bff; /* Accent border */
+    border-radius: 4px;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+}
+
+.reservation-card h3 {
+    margin-top: 0;
+    font-size: 1.2em;
+    color: #0056b3;
+}
+.reservation-card p {
+    margin: 5px 0;
+    font-size: 0.9em;
+}
+.reservation-card p strong {
+    color: #555;
+}
+.reservation-card small {
+    font-size: 0.8em;
+    color: #777;
+}
+.reservation-card button {
+    background-color: #dc3545; /* Red for cancel */
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9em;
+    margin-top: 10px;
+}
+.reservation-card button:hover {
+    background-color: #c82333; /* Darker red */
+}
+
+
+/* Admin specific styles */
+.admin-section {
+    margin-bottom: 30px;
+}
+
+.admin-section h2 { /* Already styled by .form-container h2 */
+    border-bottom: 2px solid #007bff; /* Make admin section titles more prominent */
+    padding-bottom: 10px;
+}
+
+/* Table styling for Admin section */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    font-size: 0.9em;
+}
+.table th, .table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+.table th {
+    background-color: #f8f9fa; /* Light grey for table headers */
+    font-weight: 600;
+}
+.table tr:nth-child(even) {
+    background-color: #fdfdfd;
+}
+.table input[type="text"],
+.table input[type="email"],
+.table select { /* Inputs inside tables */
+    padding: 6px;
+    font-size: 0.95em;
+    margin-bottom: 0; /* Remove default margin from form inputs */
+}
+.table button {
+    padding: 5px 10px;
+    font-size: 0.85em;
+    margin-right: 5px;
+}
+.btn-sm { /* Utility for smaller buttons in tables */
+    padding: 0.25rem 0.5rem;
+    font-size: .875rem;
+    line-height: 1.5;
+    border-radius: .2rem;
+}
+.btn-success { background-color: #28a745; color: white; border:none; }
+.btn-success:hover { background-color: #218838; }
+.btn-danger { background-color: #dc3545; color: white; border:none; }
+.btn-danger:hover { background-color: #c82333; }
+.btn-warning { background-color: #ffc107; color: #212529; border:none; }
+.btn-warning:hover { background-color: #e0a800; }
+
+
+/* Responsive adjustments */
+
+/* For smaller tablets and large phones */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+    nav ul li {
+        margin: 0 5px;
+    }
+    nav a {
+        padding: 5px;
+    }
+    .form-container {
+        padding: 20px;
+    }
+    .table th, .table td {
+        padding: 8px;
+    }
+    /* Make tables scrollable on small screens if they are too wide */
+    .admin-section { /* The container of the table */
+        overflow-x: auto; /* Allows horizontal scrolling for the section if table overflows */
+    }
+}
+
+
+/* Mobile first (already had one, refining it) */
+@media (max-width: 600px) {
+    body {
+        font-size: 15px; /* Slightly smaller base font for mobile */
+    }
+    header {
+        padding: 0.8em 0;
+    }
+    nav ul {
+        text-align: center;
+    }
+    nav ul li {
+        display: block; /* Stack nav items */
+        margin: 8px 0;
+    }
+    nav a {
+        display: block; /* Make links take full width */
+        padding: 10px;
+    }
+    main {
+        padding: 15px;
+        padding-bottom: 80px; /* Adjust for potentially taller footer or nav */
+    }
+    .form-container {
+        padding: 15px;
+    }
+    .form-container button {
+        width: 100%; /* Full width buttons on mobile */
+        padding: 14px;
+    }
+    .reservation-card {
+        padding: 12px;
+    }
+    .reservation-card button {
+        width: 100%;
+        padding: 10px;
+    }
+
+    /* Ensure admin filter inputs stack nicely */
+    #reservationManagement .form-container div > label,
+    #reservationManagement .form-container div > input,
+    #reservationManagement .form-container div > select {
+        margin-bottom: 10px;
+    }
+    #reservationManagement .form-container div > button {
+         margin-top: 10px;
+    }
+}
+
+/* Utility class for visually hidden elements (for accessibility if needed later) */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuinchoApp - Admin</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>QuinchoApp - Panel de Administración</h1>
+    </header>
+
+    <main>
+        <section id="adminLoginSection" class="form-container">
+            <h2>Login de Administrador</h2>
+            <form id="adminLoginForm">
+                <div>
+                    <label for="adminUsername">Usuario:</label>
+                    <input type="text" id="adminUsername" name="adminUsername" required>
+                </div>
+                <div>
+                    <label for="adminPassword">Contraseña:</label>
+                    <input type="password" id="adminPassword" name="adminPassword" required>
+                </div>
+                <button type="submit">Ingresar</button>
+            </form>
+        </section>
+
+        <div id="adminDashboard" style="display: none;">
+            <section id="zoomRoomManagement" class="admin-section form-container">
+                <h2>Gestión de Zoom Rooms</h2>
+                <form id="addZoomRoomForm">
+                    <label for="newZoomRoomName">Nombre del Zoom Room:</label>
+                    <input type="text" id="newZoomRoomName" name="newZoomRoomName" required>
+                    <button type="submit">Agregar Zoom Room</button>
+                </form>
+                <div id="zoomRoomsList">
+                    <!-- Zoom rooms will be listed here -->
+                </div>
+            </section>
+
+            <section id="userManagement" class="admin-section">
+                <h2>Gestión de Usuarios</h2>
+                <label for="notificationSwitch">Recibir notificaciones de nuevas altas/reservas:</label>
+                <input type="checkbox" id="notificationSwitch">
+                <div id="usersList">
+                    <!-- Users will be listed here -->
+                </div>
+            </section>
+
+            <section id="reservationManagement" class="admin-section">
+                <h2>Gestión de Reservas</h2>
+                <div>
+                    <label for="filterDate">Filtrar por Fecha:</label>
+                    <input type="date" id="filterDate">
+                    <label for="filterUser">Filtrar por Usuario (ID o Email):</label>
+                    <input type="text" id="filterUser">
+                    <label for="filterZoomRoom">Filtrar por Zoom Room:</label>
+                    <select id="filterZoomRoom">
+                        <!-- Options will be populated by JS -->
+                    </select>
+                    <button id="applyFiltersButton">Aplicar Filtros</button>
+                </div>
+                <div id="adminReservationsList">
+                    <!-- All reservations will be listed here -->
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 QuinchoApp Admin</p>
+    </footer>
+
+    <script src="js/admin.js"></script>
+    <!-- May need auth functions if admin session is handled similarly to user session -->
+    <!-- <script src="js/auth.js"></script> -->
+</body>
+</html>
